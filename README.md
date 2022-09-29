@@ -13,7 +13,7 @@
   <a href="https://www.gnu.org/software/bash/">
     <img src="site/images/bash.png" alt="Bash Logo" width="100" height="100"></a>
   <a href="https://www.paessler.com/prtg">
-    <img src="site/images/prtg-blue.png" alt="PRTG Logo" width="160" height="100"></a>
+    <img src="site/images/prtg-white.png" alt="PRTG Logo" width="160" height="100"></a>
   </a>
 
   <h3 align="center">Shell Scripts for Linux & PRTG</h3>
