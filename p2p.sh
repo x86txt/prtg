@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # get all of our variables in order
 NETSTAT=`which netstat`
@@ -6,15 +6,19 @@ IP4=$(ip -4 route list | grep default -A 1 | awk 'FNR == 2 {print $9}')
 IP6=$(ip -6 route list | grep "metric 100" | awk '{print $1}' | sed 's/.\{5\}$//')
 
 die(){
+
         exit 999
+
 }
 
 preparation(){
+
         if [ ! -x $NETSTAT ]
         then
                 echo "2:500:netstat not found."
                 die
         fi
+
 }
 
 check_service(){
@@ -32,12 +36,14 @@ check_service(){
         # print it out for prtg
         echo "0:$conns:OK"
         exit 0
+
 }
 
-main ()
+main () {
+
         preparation
         check_service
+
 }
 
 main
-
