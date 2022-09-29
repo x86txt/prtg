@@ -22,13 +22,25 @@
     A collection of bash shell scripts for pulling some of my hobby projects stats into the PRTG monitoring system
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">The Scripts</a>
+    <a href="#the-scripts">Scripts</a>
     ·
     <a href="https://github.com/x86txt/prtg/issues">Report Bug</a>
     ·
     <a href="https://github.com/x86txt/prtg/discussions">Laugh at my Code</a>
   </p>
 </div>
+<a name="the-scripts"></a>
+
+| Scripts       | Purpose                                                       |
+|---------------|---------------------------------------------------------------|
+| blockchain.sh | grab total percentage of monero blockchain present on server  |
+| height.sh     | display the monero blockchain height, according to the server | 
+| p2p.sh        | show how many peer-to-peer connections are active             |
+| rpc.sh        | display the number of active wallet connections to the server |
+| torOB.sh      | number of active connections to tor obfs4 proxy               |
+| torOR.sh      | number of current connections to tor bridge OR port           |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
