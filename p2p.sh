@@ -1,6 +1,9 @@
 #!/bin/sh
 
+# get all of our variables in order
 NETSTAT=`which netstat`
+IP4=$(ip -4 route list | grep default -A 1 | awk 'FNR == 2 {print $9}')
+IP6=$(ip -6 route list | grep "metric 100" | awk '{print $1}' | sed 's/.\{5\}$//')
 
 die(){
         exit 999
@@ -15,10 +18,17 @@ preparation(){
 }
 
 check_service(){
+
+	# unset all of our loop variables
+	unset conns conns4 conns6
+	conns4=0
+	conns6=0
+
         # get all established inbound connections to the monero p2p port
-        conns4=$(/usr/bin/netstat -an | grep '155.138.193.95:18080' | grep ESTABLISHED | wc -l)
-        conns6=$(/usr/bin/netstat -an | grep '2001:19f0:5401:23c4:5400:04ff:fe27:43d2:18080' | grep ESTABLISHED | wc -l)
+        conns4=$(/usr/bin/netstat -an | grep $IP4:18080 | grep ESTABLISHED | wc -l)
+        conns6=$(/usr/bin/netstat -anW | grep $IP6:18080 | grep ESTABLISHED | wc -l)
 	conns=$(($conns4 + $conns6)) 
+
         # print it out for prtg
         echo "0:$conns:OK"
         exit 0
