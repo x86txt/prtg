@@ -33,7 +33,7 @@
 
 | Scripts       | Purpose                                                       |
 |---------------|---------------------------------------------------------------|
-| blockchain.sh | grab total percentage of monero blockchain present on server  |
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/blockchain.sh">blockchain.sh</a> | grab total percentage of monero blockchain present on server  |
 | height.sh     | display the monero blockchain height, according to the server | 
 | p2p.sh        | show how many peer-to-peer connections are active             |
 | rpc.sh        | display the number of active wallet connections to the server |
