@@ -12,6 +12,7 @@
 <div align="center">
   <a href="https://www.gnu.org/software/bash/">
     <img src="site/images/bash.png" alt="Bash Logo" width="100" height="100"></a>
+    &nbsp;&nbsp;&nbsp;<img src="site/images/ampersand.png" alt="Bash Logo" width="50" height="50">&nbsp;&nbsp;&nbsp;
   <a href="https://www.paessler.com/prtg">
     <img src="site/images/prtg-white.png" alt="PRTG Logo" width="160" height="100"></a>
   </a>
