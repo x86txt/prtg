@@ -34,11 +34,11 @@
 | Scripts       | Purpose                                                       |
 |---------------|---------------------------------------------------------------|
 | <a href="https://github.com/x86txt/prtg/blob/main/scripts/blockchain.sh">blockchain.sh</a> | grab total percentage of monero blockchain present on server  |
-| height.sh     | display the monero blockchain height, according to the server | 
-| p2p.sh        | show how many peer-to-peer connections are active             |
-| rpc.sh        | display the number of active wallet connections to the server |
-| torOB.sh      | number of active connections to tor obfs4 proxy               |
-| torOR.sh      | number of current connections to tor bridge OR port           |
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/height.sh">height.sh</a>     | display the monero blockchain height, according to the server | 
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/p2p.sh">p2p.sh</a>        | show how many peer-to-peer connections are active             |
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/rpc.sh">rpc.sh</a>        | display the number of active wallet connections to the server |
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/torOB.sh">torOB.sh</a>      | number of active connections to tor obfs4 proxy               |
+| <a href="https://github.com/x86txt/prtg/blob/main/scripts/torOR.sh">torOR.sh</a>      | number of current connections to tor bridge OR port           |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
